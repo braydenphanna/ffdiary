@@ -8,5 +8,4 @@ Website to track your completion of Final Fantasy games and output a shareable i
 
 # APIs I Want to Implement
 - [Steam](https://steamcommunity.com/dev)
-- [SteamGridDB](https://www.steamgriddb.com/api/v2)
 - PlayStation?
