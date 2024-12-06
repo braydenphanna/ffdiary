@@ -34,7 +34,6 @@ html, body {
     width:100%;
 }
 #gameArt{
-    background-image: url("./images/7/Final Fantasy VII.jpg");
     background-size:contain;
     height: 80%;
     aspect-ratio: 6 /9;

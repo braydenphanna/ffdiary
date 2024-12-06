@@ -16,6 +16,15 @@ function init(){
 }
 function changeGameView(ID){
 
+	/*
+	1)Cache STEAM APP IDS IN JSON FILE
+	
+	2)  Use below with REPLACE NUMBER WITH APP ID
+	
+	    CORSANYWHERE : https://cors-anywhere.herokuapp.com/
+		
+		https://cdn.cloudflare.steamstatic.com/steam/apps/39140/library_600x900_2x.jpg
+	*/
 	fetch("./library.json")
 	.then(res => res.json())
 	.then(data =>{
@@ -24,7 +33,7 @@ function changeGameView(ID){
 		for(var i = 1; i<=Object.keys(data[ID]).length; i++){
 			var panel = document.createElement("div")
 			panel.id = "gamePanel";
-
+			
 			var art = document.createElement("div")
 			art.id = "gameArt";
 
@@ -32,6 +41,13 @@ function changeGameView(ID){
 			borderBottom.id = "borderBottom";
 
 			panel.appendChild(art);
+			fetch("https://cdn.cloudflare.steamstatic.com/steam/apps/39140/library_600x900_2x.jpg")
+			.then(response => response.blob())
+  			.then(blob => {
+				const img = document.createElement('img');
+				img.src = URL.createObjectURL(blob);
+				art.style.backgroundImage = "url("+img.src+")";
+			})
 			panel.appendChild(borderBottom);
 			gameView.appendChild(panel);
 		}	
