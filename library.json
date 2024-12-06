@@ -1,0 +1,97 @@
+{
+	"1":{
+		"1":{
+            "title": "Final Fantasy"
+        }
+	},
+    "2":{
+		"1":{
+            "title": "Final Fantasy II"
+        }
+	},
+    "3":{
+		"1":{
+            "title": "Final Fantasy III"
+        }
+	},
+    "4":{
+		"1":{
+            "title": "Final Fantasy IV"
+        }
+	},
+    "5":{
+		"1":{
+            "title": "Final Fantasy V"
+        }
+	},
+    "6":{
+		"1":{
+            "title": "Final Fantasy VI"
+        }
+	},
+    "7":{
+		"1":{
+            "title": "Final Fantasy VII"
+        },
+        "2":{
+            "title": "Dirge of Cerberus: Final Fantasy VII"
+        },
+        "3":{
+            "title": "Crisis Core: Final Fantasy VII"
+        },
+        "4":{
+            "title": "Final Fantasy VII Remake"
+        },
+        "5":{
+            "title": "Final Fantasy VII Rebirth"
+        }
+	},
+    "8":{
+		"1":{
+            "title": "Final Fantasy VIII"
+        }
+	},
+    "9":{
+		"1":{
+            "title": "Final Fantasy IX"
+        }
+	},
+    "10":{
+		"1":{
+            "title": "Final Fantasy X"
+        },
+        "2":{
+            "title": "Final Fantasy X-2"
+        }
+	},
+    "11":{
+		"1":{
+            "title": "Final Fantasy XI"
+        }
+	},
+    "12":{
+		"1":{
+            "title": "Final Fantasy XII"
+        }
+	},
+    "13":{
+		"1":{
+            "title": "Final Fantasy XIII"
+        }
+	},
+    "14":{
+		"1":{
+            "title": "Final Fantasy XIV"
+        }
+	},
+    "15":{
+		"1":{
+            "title": "Final Fantasy XV"
+        }
+	},
+    "16":{
+		"1":{
+            "title": "Final Fantasy XVI"
+        }
+	}
+}

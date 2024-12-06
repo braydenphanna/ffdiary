@@ -34,15 +34,16 @@ html, body {
     width:100%;
 }
 #gameArt{
+    background-image: url("./images/7/Final Fantasy VII.jpg");
+    background-size:contain;
     height: 80%;
     aspect-ratio: 6 /9;
     align-self: center;
     margin-left:2%;
-    background-color: #3f9cc2;
 }
 #library{
     height: 100%;
-    width: 300px;
+    width: 200px;
     display: grid;
 }
 .libItem{
@@ -50,6 +51,7 @@ html, body {
     background-color:#505050;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom: 2px solid #2d2d2d;
     z-index: 1;
 
     text-align: center;
