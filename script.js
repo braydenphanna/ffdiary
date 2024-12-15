@@ -31,28 +31,56 @@ function changeGameView(ID){
 		var gameView = document.getElementById("gameView");
 		gameView.innerHTML="";
 		for(var i = 1; i<=Object.keys(data[ID]).length; i++){
-			var panel = document.createElement("div")
-			panel.id = "gamePanel";
+			console.log("Attempting to retreive "+ data[ID][i]["title"]+ " image...");
+			getGameArt(data[ID][i]["title"], data[ID][i]["steam"], data[ID][i]["app-id"]).then(blob => {
+				var art = document.createElement("div")
+				art.id = "gameArt";
+				var panel = document.createElement("div")
+				panel.id = "gamePanel";
+				var borderBottom = document.createElement("div")
+				borderBottom.id = "borderBottom";
 			
-			var art = document.createElement("div")
-			art.id = "gameArt";
-
-			var borderBottom = document.createElement("div")
-			borderBottom.id = "borderBottom";
-
-			panel.appendChild(art);
-			fetch("https://cdn.cloudflare.steamstatic.com/steam/apps/39140/library_600x900_2x.jpg")
-			.then(response => response.blob())
-  			.then(blob => {
+				panel.appendChild(art);
+				
 				const img = document.createElement('img');
 				img.src = URL.createObjectURL(blob);
 				art.style.backgroundImage = "url("+img.src+")";
+
+				
+				panel.appendChild(borderBottom);
+				gameView.appendChild(panel);
+
+				console.log("success!");
 			})
-			panel.appendChild(borderBottom);
-			gameView.appendChild(panel);
 		}	
 		var footer = document.createElement("div")
 		footer.id = "footer";
 		gameView.appendChild(footer);
 	});
+}
+async function getGameArt(title, steam, appid){
+	if(steam==="true"){
+		const response =  await fetch("https://cdn.cloudflare.steamstatic.com/steam/apps/"+appid+"/library_600x900_2x.jpg")
+		const blob = response.blob();
+		return blob;
+	}
+	else{
+		let id = "";
+		await fetch("https://cors-anywhere.herokuapp.com/https://www.steamgriddb.com/api/v2/search/autocomplete/"+title,{ 
+			headers: new Headers({
+				'Authorization': 'Bearer 87cd413a72cddd615c5657b503ba1f4e',
+			})
+		}).then(res => res.json())
+		.then(data => {
+			id = data["data"][0]["id"];
+		});
+
+		await fetch("https://cors-anywhere.herokuapp.com/https://www.steamgriddb.com/api/v2/grids/game/"+id,{ 
+			headers: new Headers({
+				'Authorization': 'Bearer 87cd413a72cddd615c5657b503ba1f4e',
+			})
+		}).then(data => {
+			console.log(data);
+		});
+	}
 }

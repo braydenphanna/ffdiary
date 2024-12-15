@@ -1,97 +1,149 @@
 {
 	"1":{
 		"1":{
-            "title": "Final Fantasy"
+            "title": "Final Fantasy",
+            "steam":"true",
+            "app-id":"1173770"
         }
 	},
     "2":{
 		"1":{
-            "title": "Final Fantasy II"
+            "title": "Final Fantasy II",
+            "steam":"true",
+            "app-id":"1173780"
         }
 	},
     "3":{
 		"1":{
-            "title": "Final Fantasy III"
+            "title": "Final Fantasy III",
+            "steam":"true",
+            "app-id":"1173790"
         }
 	},
     "4":{
 		"1":{
-            "title": "Final Fantasy IV"
+            "title": "Final Fantasy IV",
+            "steam":"true",
+            "app-id":"1173800"
         }
 	},
     "5":{
 		"1":{
-            "title": "Final Fantasy V"
+            "title": "Final Fantasy V",
+            "steam":"true",
+            "app-id":"1173810"
         }
 	},
     "6":{
 		"1":{
-            "title": "Final Fantasy VI"
+            "title": "Final Fantasy VI",
+            "steam":"true",
+            "app-id":"1173820"
         }
 	},
     "7":{
 		"1":{
-            "title": "Final Fantasy VII"
+            "title": "Final Fantasy VII",
+            "steam":"true",
+            "app-id":"39140"
         },
         "2":{
-            "title": "Dirge of Cerberus: Final Fantasy VII"
+            "title": "Dirge of Cerberus: Final Fantasy VII",
+            "steam":"false",
+            "app-id":""
         },
         "3":{
-            "title": "Crisis Core: Final Fantasy VII"
+            "title": "Crisis Core: Final Fantasy VII",
+            "steam":"true",
+            "app-id":"1608070"
         },
         "4":{
-            "title": "Final Fantasy VII Remake"
+            "title": "Final Fantasy VII Remake",
+            "steam":"true",
+            "app-id":"1462040"
         },
         "5":{
-            "title": "Final Fantasy VII Rebirth"
+            "title": "Final Fantasy VII Rebirth",
+            "steam":"true",
+            "app-id":"2909400"
         }
 	},
     "8":{
 		"1":{
-            "title": "Final Fantasy VIII"
+            "title": "Final Fantasy VIII",
+            "steam":"true",
+            "app-id":"39150"
         }
 	},
     "9":{
 		"1":{
-            "title": "Final Fantasy IX"
+            "title": "Final Fantasy IX",
+            "steam":"true",
+            "app-id":"377840"
         }
 	},
     "10":{
 		"1":{
-            "title": "Final Fantasy X"
+            "title": "Final Fantasy X",
+            "steam":"true",
+            "app-id":"359870"
         },
         "2":{
-            "title": "Final Fantasy X-2"
+            "title": "Final Fantasy X-2",
+            "steam":"true",
+            "app-id":"359870"
         }
 	},
     "11":{
 		"1":{
-            "title": "Final Fantasy XI"
+            "title": "Final Fantasy XI",
+            "steam":"true",
+            "app-id":"230330"
         }
 	},
     "12":{
 		"1":{
-            "title": "Final Fantasy XII"
+            "title": "Final Fantasy XII",
+            "steam":"true",
+            "app-id":"595520"
         }
 	},
     "13":{
 		"1":{
-            "title": "Final Fantasy XIII"
+            "title": "Final Fantasy XIII",
+            "steam":"true",
+            "app-id":"292120"
+        },
+        "2":{
+            "title": "Final Fantasy XIII-2",
+            "steam":"true",
+            "app-id":"292140"
+        },
+        "3":{
+            "title": "Lightning Returns: Final Fantasy XIII",
+            "steam":"true",
+            "app-id":"345350"
         }
 	},
     "14":{
 		"1":{
-            "title": "Final Fantasy XIV"
+            "title": "Final Fantasy XIV",
+            "steam":"true",
+            "app-id":"39210"
         }
 	},
     "15":{
 		"1":{
-            "title": "Final Fantasy XV"
+            "title": "Final Fantasy XV",
+            "steam":"true",
+            "app-id":"637650"
         }
 	},
     "16":{
 		"1":{
-            "title": "Final Fantasy XVI"
+            "title": "Final Fantasy XVI",
+            "steam":"true",
+            "app-id":"2515020"
         }
 	}
 }
