@@ -68,7 +68,7 @@ async function getGameArt(title, steam, appid){
 		let id = "";
 		await fetch("https://cors-anywhere.herokuapp.com/https://www.steamgriddb.com/api/v2/search/autocomplete/"+title,{ 
 			headers: new Headers({
-				'Authorization': 'Bearer 87cd413a72cddd615c5657b503ba1f4e',
+				'Authorization': 'Bearer ---------------------------------------------',
 			})
 		}).then(res => res.json())
 		.then(data => {
@@ -77,7 +77,7 @@ async function getGameArt(title, steam, appid){
 
 		await fetch("https://cors-anywhere.herokuapp.com/https://www.steamgriddb.com/api/v2/grids/game/"+id,{ 
 			headers: new Headers({
-				'Authorization': 'Bearer 87cd413a72cddd615c5657b503ba1f4e',
+				'Authorization': 'Bearer ---------------------------------------------',',
 			})
 		}).then(data => {
 			console.log(data);
