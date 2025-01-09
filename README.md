@@ -1,4 +1,4 @@
-# Final Fantasy Diary
+# Final Fantasy Journal
 Website to track your completion of Final Fantasy games and output a shareable infographic akin to Spotify Wrapped
 
 # Features
